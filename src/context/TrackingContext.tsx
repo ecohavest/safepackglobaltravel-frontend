@@ -91,7 +91,7 @@ export const TrackingProvider: React.FC<TrackingProviderProps> = ({
     setLoading(true);
     try {
       const response = await fetch(
-        `https://safepackglobaltravel.onrender.com/api/public/tracking/${trackingId}`
+        `https://api.safepackglobaltravel.com/public/tracking/${trackingId}`
       );
 
       if (!response.ok) {
