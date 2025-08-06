@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: 53, 56, 57;
+  --color-primary-dark: 211, 211, 211;
+  --color-primary-light: 119, 136, 153;
+}
+
+@layer base {
+  /* body {
+    @apply text-gray-800 font-sans antialiased;
+  } */
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-medium;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer components {
+  .text-primary {
+    color: rgb(var(--color-primary));
+  }
+
+  .bg-primary {
+    background-color: rgb(var(--color-primary));
+  }
+
+  .bg-primary-dark {
+    background-color: rgb(var(--color-primary-dark));
+  }
+
+  .bg-primary-light {
+    background-color: rgb(var(--color-primary-light));
+  }
+
+  .border-primary {
+    border-color: rgb(var(--color-primary));
+  }
+
+  .hover\:bg-primary-dark:hover {
+    background-color: rgb(var(--color-primary-dark));
+  }
+
+  .focus\:ring-primary:focus {
+    --tw-ring-color: rgba(var(--color-primary), 0.5);
+  }
+
+  .hover\:text-primary:hover {
+    color: rgb(var(--color-primary));
+  }
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
