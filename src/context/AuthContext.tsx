@@ -34,7 +34,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
     console.log("Login attempt:", username, password);
     try {
       const response = await fetch(
-        "https://api.safepackglobaltravel.com/admin/login",
+        "https://ghost.safepackglobaltravel.com/admin/login",
         {
           method: "POST",
           headers: {

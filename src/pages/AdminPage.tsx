@@ -14,7 +14,7 @@ import {
 } from "lucide-react";
 import Input from "../ui/Input";
 
-const API_BASE_URL = "https://api.safepackglobaltravel.com/admin/tracking";
+const API_BASE_URL = "https://ghost.safepackglobaltravel.com/admin/tracking";
 
 // Helper to format ISO date string to YYYY-MM-DDTHH:MM for datetime-local input
 const formatDateForInput = (dateString?: string | null): string => {
